@@ -1,7 +1,7 @@
 import React from "react";
 
 function Text() {
-  return <div className="text"> Hello World</div>;
+  return <div className="text"> Enter Name: </div>;
 }
 
 export default Text;
