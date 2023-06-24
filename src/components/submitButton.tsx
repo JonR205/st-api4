@@ -1,9 +1,10 @@
 import React from "react";
+import "../App.css";
 
 const Button = () => {
   //({ onClick }) => {
   return (
-    <button className="lcars-navy-blue-bg.lcars-navy-blue-bg">
+    <button className="lcars-element button">
       {/* onClick={onClick}> */}
       Click me!
     </button>
