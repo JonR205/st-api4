@@ -1,6 +1,7 @@
 import React from "react";
 
-function NameInput() {
+interface NameInputProps { onChange: (value: string) => void }
+function NameInput(props: NameInputProps) {
   return (
     <>
       <h2 id="textbox_section">Actor's Name</h2>
@@ -14,7 +15,7 @@ function NameInput() {
       <p>
         {" "}
         Single-line
-        <input
+        <input onChange={(event) => props.onChange(event.target.value)}
           id="username1"
           className="lcars-text-input decorated lcars-husk-color"
         />
