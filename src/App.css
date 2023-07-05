@@ -404,11 +404,11 @@ body {
   z-index: 1;
 }
 .lcars-app-container #footer {
-  position: fixed;
+  position: absolute;
   background-color: #000;
   bottom: 0;
   left: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
   width: calc(100% - 1rem);
   z-index: 1;
 }
@@ -1801,7 +1801,7 @@ a:active {
 }
 textarea,
 input {
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: "Arial", monospace;
   color: #fff;
   border: none;

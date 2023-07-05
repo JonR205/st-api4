@@ -2,14 +2,15 @@ import React from "react";
 import Performer from "../Performer";
 
 interface DisplayProps {
-    performer?: Performer
+  performer?: Performer;
 }
 const DisplayPerformer = (props: DisplayProps) => {
-    return (
+  return (
+    <div>
+      <h1> {props.performer?.name} </h1>
+      <h2> </h2>
+    </div>
+  );
+};
 
-        <h1> {props.performer?.name} </h1>
-
-    )
-}
-
-export default DisplayPerformer
+export default DisplayPerformer;

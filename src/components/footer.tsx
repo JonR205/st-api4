@@ -3,7 +3,7 @@ import React from "react"
 
 function Footer() {
     return (
-        <div id="footer" className="lcars-row ">
+        <div className="lcars-app-container" id="footer" >
 			{/* <!-- ELBOW --> */}
 			<div className="lcars-elbow left-top lcars-golden-tanoi-bg"></div>
 			{/* <!-- BAR --> */}
