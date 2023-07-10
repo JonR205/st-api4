@@ -1,0 +1,28 @@
+interface Character {
+  "uid": string,
+  "name": string,
+  "gender": "M" | "F",
+  "yearOfBirth": number,
+  "monthOfBirth": number,
+  "dayOfBirth": number,
+  "placeOfBirth": string,
+  "yearOfDeath": number,
+  "monthOfDeath": number,
+  "dayOfDeath": string,
+  "placeOfDeath": string,
+  "height": string,
+  "weight": string,
+  "deceased": boolean,
+  "bloodType": string,
+  "maritalStatus": string,
+  "serialNumber": number,
+  "hologramActivationDate": string,
+  "hologramStatus": boolean,
+  "hologramDateStatus": boolean,
+  "hologram": boolean,
+  "fictionalCharacter": boolean,
+  "mirror": boolean,
+  "alternateReality": boolean,
+}
+
+export default Character;
