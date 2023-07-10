@@ -4,7 +4,7 @@ import Text from "../components/text";
 import NameInput from "../components/nameInput";
 import Header from "../components/header";
 import Footer from "../components/footer";
-// import background from "../images/LCARS-Excalibur.jpg";
+import background from "../images/LCARS-Excalibur.jpg";
 import SubmitButton from "../components/submitButton";
 import Performer from "../Performer";
 import DisplayPerformer from "../components/DisplayPerformer";
@@ -35,7 +35,15 @@ function PerformerSearchPage() {
   console.log(performers);
 
   return (
-    <div>
+    <div
+      id="container"
+      className="App"
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
       <DisplayPerformer performer={performers[0]}></DisplayPerformer>
       <Text></Text>
       <NameInput

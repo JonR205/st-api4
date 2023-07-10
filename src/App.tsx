@@ -4,6 +4,7 @@ import Text from "./components/text";
 import NameInput from "./components/nameInput";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Sides from "./components/Sides";
 import background from "./images/LCARS-Excalibur.jpg";
 import SubmitButton from "./components/submitButton";
 import Performer from "./Performer";
@@ -35,16 +36,8 @@ function App() {
   // console.log(performers);
 
   return (
-    <div
-    // id="container"
-    // className="App"
-    // style={{
-    //   backgroundImage: `url(${background})`,
-    //   backgroundRepeat: "no-repeat",
-    //   backgroundPosition: "center",
-    // }}
-    >
-      <Header></Header>
+    <div>
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PerformerSearchPage />} />
@@ -60,7 +53,7 @@ function App() {
         setName(value);
       }}></NameInput>
       <SubmitButton onSubmit={() => apiGet(name, setPerformers)}></SubmitButton> */}
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }

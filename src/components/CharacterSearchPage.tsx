@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import SubmitButton from "../components/submitButton";
 import Character from "../Character";
 import DisplayCharacter from "../components/DisplayCharacter";
+import background from "../images/LCARS-Excalibur.jpg";
 
 const apiGet = (
   name: string,
@@ -33,9 +34,15 @@ function CharacterSearchPage() {
   const [character, setCharacters] = useState<Character[]>([]);
 
   return (
-    <div>
+    <div id="container"
+    className="App"
+    style={{
+      backgroundImage: `url(${background})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+    }}>
       {character.map((item) => (
-        <DisplayCharacter character={character?.[1]}></DisplayCharacter>
+        <DisplayCharacter character={item}></DisplayCharacter>
       ))}
 
       <Text></Text>

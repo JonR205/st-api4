@@ -8,18 +8,14 @@ interface DisplayProps {
 }
 const DisplayPerformer = (props: DisplayProps) => {
   return (
-    <div
-      id="container"
-      className="App"
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    >
-      <h1>Name: {props.performer?.name} </h1>
-      <h2>Birth Place: {props.performer?.placeOfBirth} </h2>
-      <h2>Born: {props.performer?.dateOfBirth} </h2>
+    <div>
+      {props.performer?.name && <h1> Name: {props.performer?.name} </h1>}
+      {props.performer?.placeOfBirth && (
+        <h2> Birth Place: {props.performer?.placeOfBirth} </h2>
+      )}
+      {props.performer?.dateOfBirth && (
+        <h2>Born: {props.performer?.dateOfBirth} </h2>
+      )}
       {props.performer?.tosPerformer && <h3> Appeared in Srar Trek: TOS </h3>}
       {props.performer?.tasPerformer && (
         <h3 className="h3"> Appeared in Srar Trek: The Animated Series </h3>
