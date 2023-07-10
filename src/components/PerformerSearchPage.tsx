@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "../App.css";
 import Text from "../components/text";
 import NameInput from "../components/nameInput";
-import Header from "../components/header";
-import Footer from "../components/footer";
 import background from "../images/LCARS-Excalibur.jpg";
 import SubmitButton from "../components/submitButton";
 import Performer from "../Performer";

@@ -1,7 +1,5 @@
 import React from "react";
-import Performer from "../Performer";
 import "../App.css";
-import background from "../images/LCARS-Excalibur.jpg";
 import Character from "../Character";
 
 interface CharacterDisplayProps {

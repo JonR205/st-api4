@@ -1,7 +1,6 @@
 import React from "react";
 import Performer from "../Performer";
 import "../App.css";
-import background from "../images/LCARS-Excalibur.jpg";
 
 interface DisplayProps {
   performer?: Performer;
@@ -53,8 +52,3 @@ const DisplayPerformer = (props: DisplayProps) => {
 };
 
 export default DisplayPerformer;
-
-//     "animalPerformer": boolean,
-//     "cutPerformer": boolean,
-//     "ldPerformer": boolean,
-//     "proPerformer": boolean,
