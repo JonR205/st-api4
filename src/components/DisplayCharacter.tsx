@@ -14,13 +14,17 @@ const DisplayCharacter = (props: CharacterDisplayProps) => {
       <h2>Day Born: {props.character?.dayOfBirth} </h2>
       <h2>Month Born: {props.character?.monthOfBirth} </h2>
       <h2>Year Born: {props.character?.yearOfBirth} </h2>
-      {props.character?.hologram && <h3> Character is a Holograhm: </h3>}
+      {props.character?.hologram && <h3> Character is a Holograhm</h3>}
+      {props.character?.mirror && (
+        <h3> Character is from the Miror Universe </h3>
+      )}
       {props.character?.alternateReality && (
         <h3> Character is from an Alternate Reality </h3>
       )}
       {props.character?.maritalStatus && (
         <h3> Marital Status: {props.character?.maritalStatus} </h3>
       )}
+      <div className="lcars-bar bottom" />
     </div>
   );
 };
